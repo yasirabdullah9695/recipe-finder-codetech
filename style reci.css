@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding:0
+    font-family:verdana,geneva
+}
+ body{
+background-color: rgb(28, 2, 2);
+color: azure;
+background-image: url(depositphotos_645950124-stock-photo-healthy-meals-delivery-white-wooden.jpg);
+background-repeat: no-repeat;
+background-size:cover;
+background-attachment: fixed;
+
+ }
+ header nav{
+    background-color: black;
+    padding: 20px;
+    display:flex ;   /*recipe ar seach box ko alg alg corner me le jana*/
+    justify-content: space-between;
+    align-items: center;   /*vertically centre hna h */
+    z-index:1;
+ 
+    margin-left: 
+  
+
+ }
+ header nav h1{
+    font-size: 27 px;
+    font-weight: 700px;
+    letter-spacing: 1;
+    text-transform: uppercase;
+ }
+ header nav form {
+    display: flex;
+
+    justify-content: center;
+ }
+ form input[type="text"]{
+    flex-grow: 1;
+    border-radius: 1px ,solid,  black;
+    padding-right: 75px;
+    margin-left: 20px;
+    border:  3px solid rgb(201, 185, 185);
+
+ }
+ @media screen and(max-width:600px) {
+  header nav{
+   flex-direction: column;
+  }
+
+    header nav form{
+        width: 80%;
+        margin-top: 20px;
+    }
+ } 
+ form button{
+    cursor: pointer;
+    background-color:rgb(193, 125, 125);
+    margin-left: 10px;
+    border:  3px solid rgb(201, 185, 185);
+ }
+    form button:hover{
+     transform: scale(1.1);
+     height: 28px;
+ }
+.recipe-container{
+   text-align: center;
+   margin-top: 20px;
+    display:grid;  /*image taki card jese dike*/
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /*ek page pe min ar max ktna px lega image wo max function define kr rha h auto fit mtlb jtne  img aa skti hn wo aaegi*/
+    grid-gap: 40px;
+    height: 40%
+    width:60%
+ 
+    margin: 10px auto;
+      padding:20px;
+
+     place-items:center;     
+
+
+ }
+ 
+
+
+.recipe{
+background-color:rgba(77, 11, 11, 0.485);
+display:flex;
+border-radius: 70%;
+flex-direction:column;
+color:black;
+cursor:pointer;
+font-size: larger;
+border:3px ,solid, black;
+max-width: 300px;   //*/ isse zyda jgh mi gheregi image/*/
+
+
+}
+.recipe:hover {
+   transform: scale(1.1);
+    border-radius: 0;
+   background-color: rgba(91, 172, 183, 0.267);
+  }
+
+ .recipe img {
+   height: 250px;
+   border:  2px, solid black;
+   border-radius: 50%;
+   color: antiquewhite;
+ }
+
+  .recipe h3{
+   font-size: 20px;
+   color: black;
+   margin:5px
+  }
+  .recipe button{
+   font-size: 20px;
+   font-weight: 600;
+   padding:10px;
+   border-radius:5px ;
+   cursor: pointer;
+   border-radius: 50%;
+   margin: 18px auto;
+   background-color:azure;
+   border:3px ,solid, black;
+ 
+  }
+  .recipe button:hover{
+   border-radius: 0%;
+  }
+  .recipe-detail{
+   display:none;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   border: 2px solid black;
+   transform: translate(-50%,-50%);
+   /* -webkit-transform: translate(-50%,-50%); */
+    border-radius: 12px;
+    width: 350px;
+    height: 400px;
+   background-color:rgba(157, 87, 68, 0.908);
+   overflow: scroll;
+   color: black;
+   margin-left:10px;
+   justify-content: center;
+}
+
+   .recipe-detail:hover{
+      background-color: black;
+      color: aquamarine;
+
+  } 
+  h1:hover{
+   color: #d04f4f62;
+   width: 20px;
+  }
+  h2{
+   color:rgb(2, 2, 2);
+   font-size: 30px;
+  }
